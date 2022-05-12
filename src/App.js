@@ -2,20 +2,15 @@ import React from "react";
 import "./App.css";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
-
+import Home from "./pages/Home";
 const client = new ApolloClient({
-  uri: "https://48p1r2roz4.sse.codesandbox.io",
+  uri: process.env.REACT_APP_GRAPHQL,
 });
 
 const App = () => (
   <ApolloProvider client={client}>
     <div>
-      <h2>
-        My first Apollo app{" "}
-        <span role="img" aria-label="Rocket">
-          🚀
-        </span>
-      </h2>
+      <Home />
     </div>
   </ApolloProvider>
 );
