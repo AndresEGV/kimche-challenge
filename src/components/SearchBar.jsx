@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import countries from "../graphql/countries";
 
-const SearchBar = () => {
-  const [country, setCountry] = useState("");
+const SearchBar = ({ countries }) => {
+  console.log(countries);
+  const [countryInputText, setCountryInputText] = useState("");
   const handleChangeText = (e) => {
-    setCountry(e.target.value);
+    setCountryInputText(e.target.value);
   };
 
   return (
     <div>
-      <input type="text" onChange={(e) => handleChangeText(e)} />
+      <input type="text" value={countryInputText} onChange={handleChangeText} />
     </div>
   );
 };

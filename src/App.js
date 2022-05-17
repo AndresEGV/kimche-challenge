@@ -4,7 +4,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import Home from "./pages/Home";
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_GRAPHQL,
+  uri: "https://countries.trevorblades.com/",
 });
 
 const App = () => (

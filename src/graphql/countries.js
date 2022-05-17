@@ -1,10 +1,12 @@
 import gql from "graphql-tag";
 
 const COUNTRIES = gql`
-  query continents {
+  query {
     countries {
-      code
       name
+      code
+      native
+      capital
       continent {
         name
       }
@@ -13,10 +15,11 @@ const COUNTRIES = gql`
         name
         native
       }
-      phone
-      capital
-      currency
       emoji
+      emojiU
+      states {
+        name
+      }
     }
   }
 `;
