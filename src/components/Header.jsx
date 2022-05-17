@@ -4,7 +4,7 @@ import COUNTRIES from "../graphql/countries";
 import { useQuery } from "@apollo/react-hooks";
 
 const Header = () => {
-  const { data, error, loading } = useQuery(COUNTRIES);
+  const { data, loading } = useQuery(COUNTRIES);
 
   return (
     <div>

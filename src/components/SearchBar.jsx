@@ -10,7 +10,7 @@ const SearchBar = ({ countries }) => {
     if (continent === null) {
       setContinent(true);
     }
-  }, []);
+  }, [continent]);
 
   const handleChangeText = (e) => {
     setCountryInputText(e.target.value);
