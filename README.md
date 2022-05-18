@@ -1,7 +1,7 @@
 # Desafío para Software Engineers
 
-Nombre postulante: [TU NOMBRE]
-Link a la app en producción: [LINK DEL DEPLOY]
+Nombre postulante: Andrés Gómez
+Link a la app en producción: https://funny-madeleine-b75be2.netlify.app/
 
 ## Instrucciones
 
