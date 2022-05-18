@@ -4,9 +4,9 @@ const CountryFind = ({ country, continent }) => {
   return (
     <div>
       {country.length === 0 ? (
-        <p></p>
+        <div className="w-11/12"></div>
       ) : (
-        <div className="card-container">
+        <div className="mt-20 flex flex-wrap justify-center align-center m-auto">
           {country.map((country) => (
             <div className="" key={country.code}>
               <div className="card-container-box">

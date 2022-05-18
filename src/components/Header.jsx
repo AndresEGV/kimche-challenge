@@ -7,9 +7,9 @@ const Header = () => {
   const { data, loading } = useQuery(COUNTRIES);
 
   return (
-    <div>
-      <h1>Country Search</h1>
-      <h2>Search by characters or words</h2>
+    <div className="text-center h-screen">
+      <h1 className="text-4xl font-bold mb-10">Country Search</h1>
+
       {loading ? <p>loading..</p> : <SearchBar countries={data?.countries} />}
     </div>
   );
