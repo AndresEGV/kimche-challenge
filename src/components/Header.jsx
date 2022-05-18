@@ -8,7 +8,9 @@ const Header = () => {
 
   return (
     <div className="text-center h-screen">
-      <h1 className="text-4xl font-bold mb-10">Country Search</h1>
+      <h1 className="text-4xl font-bold mb-10 text-indigo-900">
+        Country Search
+      </h1>
 
       {loading ? <p>loading..</p> : <SearchBar countries={data?.countries} />}
     </div>

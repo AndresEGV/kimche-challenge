@@ -61,7 +61,9 @@ const SearchBar = ({ countries }) => {
 
       <div>
         <div className="w-80 m-auto flex flex-wrap justify-center items-center mt-16">
-          <h2 className="font-bold text-2xl mr-3">Group By: </h2>
+          <h2 className="font-bold text-2xl mr-5 text-indigo-800">
+            Group By:{" "}
+          </h2>
           <div className="">
             <button
               type="button"
